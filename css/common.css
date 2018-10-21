@@ -1,0 +1,68 @@
+body{
+	background-color: #F6F8FA;
+}
+.mui-active
+{
+color: #FF91AA !important;
+}
+/*首页nav样式CSS*/
+.mui-bar-nav{
+	background-color: #836760;
+	color: #FFFFFF;
+	height: 50px;
+}
+.index_address{
+	text-align: left;
+	line-height: 50px;
+}
+.index_logo{
+	text-align: center;
+	line-height: 50px;
+}
+.index_logo img{
+	width: 30px;
+	height: 30px;
+	margin: 10px auto;
+}
+.index_search{
+	text-align: right;
+	line-height: 50px;
+}
+/*首页商品列表CSS*/
+.produce_lists{
+	width: 96%;
+	height: auto;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.product_list{
+	width: 46%;
+	margin: 5px 2%;
+	overflow: hidden;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: solid 1px #836760;
+}
+.product_list img{
+	width: 100%;
+}
+.list_money{
+	float: left;
+	width: 30%;
+	height: 25px;
+	line-height: 25px;
+	margin: 10px 0;
+}
+.add_cart{
+	float: right;
+	width: 60%;
+	height: 25px;
+	line-height: 25px;
+	color: #FFFFFF;
+	border: solid 1px #836760;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: #836760;
+	margin: 10px 0;
+}
