@@ -1,6 +1,7 @@
 body{
-	background-color: #F6F8FA;
+	background-color: #EFEFF4;
 }
+*{ touch-action: none; }
 .mui-active
 {
 color: #FF91AA !important;
@@ -43,7 +44,8 @@ color: #FF91AA !important;
 	height: auto;
 	text-align: center;
 	background-color: #FFFFFF;
-	border: solid 1px #836760;
+	border-radius: 6px;
+	box-shadow: -3px 3px 8px #836760;
 }
 .product_list img{
 	width: 100%;
@@ -54,6 +56,7 @@ color: #FF91AA !important;
 	height: 25px;
 	line-height: 25px;
 	margin: 10px 0;
+	font-size: 15px;
 }
 .add_cart{
 	float: right;
@@ -61,9 +64,10 @@ color: #FF91AA !important;
 	height: 25px;
 	line-height: 25px;
 	color: #FFFFFF;
+	font-size: 15px;
 	border: solid 1px #836760;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
 	background: #836760;
 	margin: 10px 0;
 }
@@ -80,3 +84,33 @@ color: #FF91AA !important;
 	color: #836760;
 	background-color: #EFEFF4;
 }
+/*城市定位CSS*/
+.position_city{
+	width: 98%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.curr_city{
+	font-size: 20px;
+	margin: 10px 5px;
+	color: grey;
+	font-weight: 700;
+}
+.city_card{
+	width: 30%;
+	height: 40px;
+	border: solid 1px darkgrey;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 10px 5px;
+}
+.city_card1{
+	font-size: 18px;
+	line-height: 40px;
+	color: #836760;
+}
+.city_card2{
+	font-size: 18px;
+	line-height: 40px;
+}
+

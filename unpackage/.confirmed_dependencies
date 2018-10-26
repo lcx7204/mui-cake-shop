@@ -1,11 +1,17 @@
 {
-  "index.html": {
-    "href": "index.html",
-    "resources": [
-      "js/mui.min.js",
-      "css/mui.min.css"
-    ],
-    "refer": [],
-    "priority": 0
-  }
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"html/cake.html"
+		],
+		"refer": [
+			"html/type.html",
+			"html/mine.html",
+			"html/cake.html",
+			"html/cart.html"
+		],
+		"priority": 0
+	}
 }

@@ -4,14 +4,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
+		<title>首页</title>
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<script type="text/javascript" charset="utf-8">
-			mui.init();
-		</script>
+		
 	</head>
 
 	<body>
@@ -21,10 +19,11 @@
     	描述：主题颜色色调
     	青色：#FF91AA;粉色     #836760 棕色
     	原型图参考网址：http://so.ooopic.com/sousuo/15482835/
+    	https://www.cnblogs.com/jerehedu/p/9167369.html    页面跳转参考
     	https://www.xiaopiu.com/
     -->
 		<header class="mui-bar mui-bar-nav">
-			<div class="mui-row">
+			<div class="mui-row" id='title'>
 				<div class="mui-col-sm-4 mui-col-xs-4 index_address">
 					上海<span class="mui-icon mui-icon-arrowdown"></span>
 				</div>
@@ -36,122 +35,89 @@
 				</div>
 			</div>
 		</header>
-		<div class="mui-content">
-			<div class="mui-slider">
-				<div class="mui-slider-group mui-slider-loop">
-					<!--支持循环，需要重复图片节点-->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#"><img src="images/banner_4.png" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/banner_1.png" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/banner_2.png" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/banner_3.png" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/banner_4.png" /></a>
-					</div>
-					<!--支持循环，需要重复图片节点-->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#"><img src="images/banner_1.png" /></a>
-					</div>
-				</div>
-			</div>
-			<div class="produce_lists">
-				<div class="mui-row">
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-					<div class="product_list mui-col-sm-6 mui-col-xs-6">
-						<img src="images/list1.png" />
-						<div>
-							<strong>盼盼法式蛋糕</strong>
-						</div>
-						<div class="list_money">￥200</div>
-						<div class="add_cart">Add to Cart</div>
-					</div>
-				</div>
-				<div class="line">
-					<dd>我可是有底线的</dd>
-				</div>
-			</div>
-		</div>
+		
 		<nav class="mui-bar mui-bar-tab">
-			<a href="view/templates/home/home.html" class="mui-tab-item mui-active" id="defaultTab">
+			<a id="tab_home" class="mui-tab-item mui-active" href="html/cake.html">
 				<i class="fa fa-bicycle fa-fw mui-icon iconfont"></i>
 				<span class="mui-tab-label">首页</span>
 			</a>
-			<a href="view/templates/ShopClass/ShopClass.html" class="mui-tab-item">
+			<a  id="tab_type" class="mui-tab-item" href="html/type.html">
 				<i class="fa fa-birthday-cake fa-fw mui-icon iconfont"></i>
 				<span class="mui-tab-label">分类</span>
 			</a>
-			<a href="view/templates/ShopCart/ShopCart.html" class="mui-tab-item">
+			<a id="tab_cart" class="mui-tab-item" href="html/cart.html">
 				<i class="fa fa-shopping-basket fa-fw mui-icon iconfont">
 				<span class="mui-badge">5</span></i>
 				<span class="mui-tab-label">购物车</span>
 			</a>
-			<a href="view/templates/person/person.html" class="mui-tab-item">
+			<a id="tab_mine" class="mui-tab-item" href="html/mine.html">
 				<i class="fa fa-user-o fa-fw mui-icon iconfont"></i>
 				<span class="mui-tab-label">我的</span>
 			</a>
 		</nav>
+		
+		<script type="text/javascript" charset="utf-8">
+			mui.init({});
+			(function($){
+				$(".mui-scroll-wrapper").scroll({
+					bounce: false,//滚动条是否有弹力默认是true
+					indicators: true, //是否显示滚动条,默认是true
+				});		
+			})(mui);
+			mui('.mui-scroll-wrapper').scroll({
+            	deceleration: 0.0005
+        	})
+			var subpages = ["html/cake.html","html/type.html","html/cart.html","html/mine.html"];
+			var sub_style = {
+				top:'50px',
+				bottom:'50px'
+			};
+			//当前选项卡
+			var activeTab = subpages[0];
+			//创建子页面，显示首选项卡，隐藏其他选项卡
+			mui.plusReady(function(){
+				var self = plus.webview.currentWebview();
+				for(var i=0;i<subpages.length;i++){
+					var sub = plus.webview.create(subpages[i],subpages[i],sub_style);
+					if(i>0){
+						sub.hide();   //隐藏其他页面
+					}
+					self.append(sub);
+				}
+			});
+			//选项卡点击事件
+			mui('.mui-bar-tab').on('tap','a',function(e){
+				var targetTab = this.getAttribute('href');
+				if(targetTab == activeTab){
+					return;
+				}
+				//更换标题
+				var title = document.getElementById('title');
+				//显示目标选项卡
+				plus.webview.show(targetTab);
+				//隐藏原选项卡
+				plus.webview.hide(activeTab);
+				//更换当前选中选项卡
+				activeTab = targetTab;
+				var flag = 'html/cake.html'==targetTab;
+				if(flag){
+					title.innerHTML = 
+					'<div class="mui-col-sm-4 mui-col-xs-4 index_address">'+
+						'上海<span class="mui-icon mui-icon-arrowdown"></span>'+
+					'</div>'+
+					'<div class="mui-col-sm-4 mui-col-xs-4 index_logo">'+
+						'<img src="images/cake_logo.png" />'+
+					'</div>'+
+					'<div class="mui-col-sm-4 mui-col-xs-4 index_search">'+
+						'<span class="mui-icon mui-icon-search"></span>'+
+					'</div>';
+				}else{
+					title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+					title.style.textAlign = "center";
+					title.style.lineHeight = "50px";
+				}
+			});
+		</script>
 	</body>
 
 </html>

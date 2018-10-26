@@ -42,7 +42,7 @@
 	"plus": {
 		"splashscreen": {
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-			"waiting": true
+			"waiting": true,"delay":"500"
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -70,32 +70,32 @@
 					"iphone": {
 						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
 						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
-						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
 						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
 						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
-						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
 						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
-						"settings-retina": ""
+						"app@2x":"images/cake_logo.png","app@3x":"images/cake_logo.png","settings@3x":"images/cake_logo.png","settings@2x":"images/cake_logo.png","spotlight@2x":"images/cake_logo.png","spotlight@3x":"images/cake_logo.png","notification@3x":"images/cake_logo.png","notification@2x":"images/cake_logo.png"
 					},
 					"ipad": {
 						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
 						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
-						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
-						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						 /*iPad iOS7程序图标，分辨率：76x76*/
+						 /*iPad iOS7高分屏程序图标，分辨率：152x152*/
 						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
 						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
-						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
-						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
-						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
-						"settings-retina": ""
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app":"images/cake_logo.png","app@2x":"images/cake_logo.png","settings":"images/cake_logo.png","proapp@2x":"images/cake_logo.png","spotlight":"images/cake_logo.png","settings@2x":"images/cake_logo.png","spotlight@2x":"images/cake_logo.png","notification":"images/cake_logo.png","notification@2x":"images/cake_logo.png"
 					},"appstore":"images/cake_logo.png"
 				},
 				"android": {
-					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
-					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
-					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
-					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
-					"xxhdpi": ""
+					"mdpi": "images/cake_logo.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "images/cake_logo.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "images/cake_logo.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "images/cake_logo.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "images/cake_logo.png","xxxhdpi":"images/cake_logo.png"
 				}
 			},
 			"splashscreen": {
@@ -133,9 +133,15 @@
 				"resources": [
 					"js/mui.min.js",
 					"css/mui.min.css",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"html/cake.html"
 				],
-				"priority": 0
+				"priority": 0,
+				"refer": [
+					"html/type.html",
+					"html/mine.html",
+					"html/cart.html"
+				]
 			}
 		},
 		"idle": {
